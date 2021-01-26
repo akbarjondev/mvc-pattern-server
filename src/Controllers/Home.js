@@ -1,5 +1,7 @@
+const path = require('path')
+
 const GET = (req, res) => {
-	res.send('Welcome')
+	res.sendFile(path.join(__dirname, './../View', './index.html'))
 }
 
 module.exports.GET = GET
