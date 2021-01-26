@@ -1,11 +1,10 @@
 const express = require('express')
+const Home = require('./src/Controllers/Home')
+const CONFIG = require('./src/config')
 
 const app = express()
 
-const PORT = process.env.PORT || 4001
+app.get('/', Home.GET)
 
-app.get('/', (_, res) => {
-	res.send('Welcome')
-})
 
-app.listen(PORT, () => console.log(`Server ready at http://localhost:${PORT}`))
+app.listen(CONFIG.PORT, () => console.log(`Server ready at http://localhost:${CONFIG.PORT}`))
