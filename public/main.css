@@ -5,14 +5,23 @@ body {
 	color: #212529;
 }
 
+.header {
+	padding: 15px;
+}
+
+.container {
+	max-width: 1120px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
 .intro {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 
-.header {
-	padding: 15px;
+.intro__heading {
+	text-align: left;
 }
 
 .list {
